@@ -1,0 +1,33 @@
+﻿@model OnADifferentNote.Models.ProductViewModel
+    @{
+        var slashthrough = "";
+        var total = 0.00;
+        if (Model.ProductSalePrice != default(double))
+        {
+            slashthrough = "slash-through";
+            total = Model.ProductSalePrice * Model.quantity;
+        }
+        else { total = Model.ProductPrice * Model.quantity; }
+    }
+        <div class="product">
+            <span id="productId" class="invisible">@Model.ProductId</span>
+            <h4>@Model.ProductName</h4>
+            <a href="details.html">
+                <img class="cart-image" src="@Model.ProductImageUrl" alt="@Model.ProductName" width="110" height="110" border="0">
+            </a>
+            <p>
+                $<span class="@slashthrough regular-price">@Model.ProductPrice</span><br /><br />
+                <span class="sale-price"></span>
+            </p>
+            <p><a href="details.html">Details</a></p>
+            <br />
+            Quantity: <input type="text" size="5" maxlength="5" value=@Model.quantity />
+            <a href="#" class="button">Update</a>
+            <br />
+            <p><span class="special">Total: </span><br /> $@total </p>
+            <a href="#" id="removeFromCart" class="button">Remove Item</a>
+            <p><a href="details.html">Details</a></p>
+        </div>
+
+        @*Price: <span class="retail-price">$@Model.ProductPrice</span><span class="sale-price"</span>
+            These classes can be used by js to update after a zip code promo is updated*@

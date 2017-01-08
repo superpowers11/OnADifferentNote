@@ -1,0 +1,459 @@
+﻿/*Mobile first styles*/
+body {
+	font-family: "Century Gothic", sans-serif;
+	color: #000000;
+	background-image: url("music-notes.png");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-color: #FDFFF1;
+}
+hr {
+    visibility: hidden;
+}
+header {
+	border-bottom: solid;
+	letter-spacing: .01em;
+	}
+h1 {
+	margin-top: .02em;
+	margin-bottom: .02em;
+}
+.banner {
+		padding-bottom: .1em;
+		letter-spacing: .03em;
+		font-size: 1.3em;
+}
+.wrapper {
+	background-color: rgba(253,255,241,0.4);
+	margin-top: -.5em;
+}
+.navigation {
+	color:#8A0F0D;
+	font-weight: bold;
+	float: left;
+	width: 100%;
+	margin-top: -.9em;
+}
+.navigation ul {
+	display: inline-block;
+	padding: 0;
+	width: 100%;
+}
+.menuitem {
+    list-style: none;
+    padding: 0.3em;
+    background-color: rgba(210,210,200,0.8);
+    letter-spacing: .05em;
+    margin-top: .3em;
+    font-size: 1.4em;
+    width: 99%;
+    display: inline-block;
+}
+.menuitem  li {
+	list-style: none;
+	padding: 0.2em;
+	background-color: rgba(10,10,10,0.8);
+	letter-spacing: .05em;
+	margin-top: .3em;
+	font-size: 1.4em;
+	display:inline-block;
+	color: #8a0f0d;
+    font-weight: bold;
+	
+}
+.menuitem a {
+	text-decoration: none;
+	color: #8A0F0D;
+	width: 100%;
+}
+.menuitem a:hover {
+	text-decoration: underline;
+}
+.menuitem:hover ul  {
+		position: static;
+		visibility: visible;
+		display:inline-block;
+		width:100%;
+		margin: .3em;
+}
+.menuitem ul {
+    position: absolute;
+    display: none;
+}
+.menuitem:hover, .menuitem ul:hover {
+    position: static;
+    visibility: visible;
+    display: inline-block;
+}
+
+.menuitem ul li {
+    color: #FDFFF1;
+	left: 5em;
+	font-size: .8em;
+	position: static;
+}
+.menuitem:hover ul li a {
+	color: #FDFFF1;
+}
+.menuitem .signup li {
+    font-size: .6em;
+    margin-left: -.5em;
+    padding: .5em;
+}
+.menuitem .signup li input {
+    margin-left: .25em;
+    margin-top: .15em;
+}
+.subhead {
+	clear: both;
+	font-size: 1.5em;
+	letter-spacing: .06em;
+	margin-bottom: .7em;
+	margin-left: 10%;
+	margin-right: 5%;
+	position: relative;
+	text-align: right;
+}
+.subhead h3 {
+	margin-bottom: .4em;
+	margin-right: 5%;
+}
+.subhead .price {
+	font-size: .8em;
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-right: 5%;
+}
+.subhead .sort {
+	font-size: .5em;
+	margin-right: 1.55em;
+}
+.subhead .button {
+	font-size: .35em;
+}
+.subhead .totals {
+	font-size: .6em;
+	margin-right: 5%;
+	margin-left: auto;
+	width:50%;
+}
+.totals .calculations {
+	border-bottom: 1px solid black;
+	font-size: .6em;
+	margin-top: -1em;
+	padding: 0;
+}
+.content {
+	background-color: rgba(210, 210, 200, 0.8);
+	font-size: 1.3em;
+	margin-left: auto;
+	margin-right: auto;
+	letter-spacing: .1em;
+	padding: 0.3em 0.5em 0.3em;
+	text-align: right;
+	width: 80%;
+}
+.content p {
+		width: 95%;
+		padding: .25em 1em .25em;
+	}
+.details-image {
+	display: block;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-left: auto;
+	width:60%;
+}
+.cart-image {
+	margin-top: .5em;
+	width: 100%;
+}
+.video iframe {
+	margin-left: -.5%;
+	margin-right: 3%;
+	width: 95%;
+}
+.button {
+	background-color:#8A0F0D;
+	border-radius: .4em;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:.8em;
+	font-weight:bold;
+    letter-spacing: .05em;
+	margin-bottom: .7em;
+	margin-right: 5%;
+	margin-top: .9em;
+	padding:.55em .75em;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+}
+.button:hover {
+	background-color:#C23734;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+.product-list {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.product {
+	background-color: rgba(210, 210, 200, 0.8);
+	display: inline-block;
+	letter-spacing: .1em;
+	margin: 0.8em;
+	padding: 0.5em 2em 0.5em;
+	vertical-align: top;
+	width: 8.5em;
+}
+.featured.product {
+    display: none;
+}
+.featured {
+    color: black;
+    font-weight: normal;
+}
+.featured.product {
+    margin-left:0;
+    margin-top: 3.5em;
+}
+.featured h5 {
+    background-color: rgb(138,15,13);
+    border-radius: .4em;
+    color: rgb(253,255,241);
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin-left:-.4em;
+    margin-bottom: -.5em;
+    margin-top: .7em;
+    padding: .4em;
+    width: 5.2em;
+}
+.featured h4 {
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+.product-list h4 {
+	font-size: 1.5em;
+	min-height: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	width: 4.5em;
+}
+.product-list p {
+	margin: 0.5em 0 0.5em;
+}
+.product-list a {
+	font-size: .6em;
+}
+.cart-list {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.cart-list .product {
+	width: 9.5em;
+}
+.cart-list h4 {
+	min-height: 1.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	width: 4.5em;
+}
+.zipcode {
+	float: right;
+	width: 60%;
+	margin: 0;
+	font-size: 1em;
+	background-color: transparent;
+}
+.zipcode p {
+	margin: 1.25em 0 .2em;
+}
+footer {
+	font-size: .5em;
+	position: relative;
+	bottom: 0;
+	padding: 0.7em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 15em;
+	float: right;
+	width: 100%;
+	text-align: right;
+}
+/*span stylings*/
+.special {
+	font-weight: bold;
+}
+.italics {
+	font-style: italic;
+}
+.slash-through {
+    text-decoration: line-through;
+}
+.invisible {
+    visibility: hidden;
+}
+.attention {
+    border: solid 4.5px #8A0F0D;
+    border-radius: 0.4em;
+    font-size: 1.1em;
+    margin-top: 1em;
+    padding: 0.16em;
+}
+#welcome-message {
+    background-color: #8A0F0D;
+    color: #FDFFF1;
+    letter-spacing: .05em;
+    margin-bottom: -.7em;
+    margin-top: .3em;
+    padding: .3em;
+    visibility: hidden;
+    width: 98%;
+}
+#current-zipcode {
+    background-color: #8A0F0D;
+    color: #FDFFF1;
+    font-size: 0.8em;
+    letter-spacing: .05em;
+    margin-bottom: -.7em;
+    margin-top: .3em;
+    padding: .5em;
+    visibility: hidden;
+    width: 98%;
+}
+/*Tablet-ish size*/
+@media only screen and (min-width: 730px) {
+	.wrapper {
+		background-color: transparent;
+	}
+    .banner {
+		margin-top: .3em;
+		padding-bottom: .1em;
+		padding-left: 20%;
+		padding-right: 10%;
+		letter-spacing: .2em;
+		font-size: 2.4em;
+		text-align: right;
+	}
+    .subhead {
+		margin-left: 45%;
+		margin-right: 5%;
+	}
+    .navigation {
+        margin-left: 1em;
+		position: absolute;
+        width: 20%;
+    }
+    .content {
+        margin-right: 15%;
+        width: 50%;
+    }
+	.product-list {
+	width: 60%;
+	margin-left: 25%;
+	}
+	.product {
+		width: 6.8em;
+	}
+	.product-list h4 {
+		font-size: 1em;
+		min-height: 3.5em;
+	}
+}
+/*Desktop-ish size*/
+@media only screen  and (min-width: 992px) {
+	header {
+		border-bottom: solid;
+		letter-spacing: .1em;
+	}
+	h1 {
+		margin-top: .3em;
+		margin-bottom: .2em;
+	}
+
+	.banner.home-banner {
+		padding-left: 60%;
+	}
+	.navigation {
+
+        width: 15%
+	}
+	.navigation ul {
+		width: 100%;
+		float: left;
+	}
+	.menuitem {
+    	list-style: none;
+    	padding: 0.5em;
+    	background-color: rgba(210,210,200,0.8);
+    	margin: .3em;
+    	display: block;
+	}
+	.menuitem  li {
+		list-style: none;
+		padding: 0.5em;
+		background-color: rgba(210,210,200,0.8);
+		margin: .3em;
+		display: block;
+		color: #8a0f0d;
+    	font-weight: bold;
+	}
+	.menuitem a {
+		text-decoration: none;
+		color: #8A0F0D;
+	}
+	.menuitem a:hover {
+		text-decoration: underline;
+	}
+	.menuitem:hover ul {
+    	position: static;
+    	visibility: visible;
+    	display: inline-block;
+    	width: 100%;
+    	margin: .3em;
+	}
+	.menuitem:hover, .menuitem ul:hover  {
+		position: static;
+		visibility: visible;
+		display:inline-block;
+	}
+	.menuitem ul li {
+		left: 5em;
+		font-size: .7em;
+		background-color: rgba(10,10,10,0.8);
+	}
+    .menuitem:hover ul li a {
+		color: #FDFFF1;
+	}
+    .featured.product {
+        display: inline-block;
+    }
+	.subhead {
+		font-size: 2em;
+		letter-spacing: .06em;
+		margin-left: 45%;
+		margin-right: 10%;
+		position: relative;
+		text-align: right;
+	}
+	.content {
+		font-size: 1.3em;
+        margin-right: 18%;
+        width: 55%;
+	}
+	.cart-list {
+		margin-left: 40%;
+	}
+	.zipcode {
+		font-size: 1.3em;
+	}
+	.zipcode p {
+		margin: 1.25em 0 .2em;
+	}
+}

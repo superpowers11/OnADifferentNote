@@ -1,0 +1,69 @@
+﻿@model OnADifferentNote.Models.IBaseViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On a Different Note: @ViewBag.Title</title>
+
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+
+</head>
+<body>
+    <header class="banner home-banner">
+        <h1>On a Different Note</h1>
+    </header>
+    <div class="wrapper">
+        <nav class="navigation">
+            <div id="welcome-message"></div>
+            <div id="current-zipcode"></div>
+            <ul>
+                <li class="menuitem">
+                    <a href="products.html">Instruments</a>
+                    <ul>
+                        <li><a href="products.html">Electronic</a></li>
+                        <li><a href="products.html">Vintage (i.e. Old)</a></li>
+                        <li><a href="products.html">Gargantuan</a></li>
+                        <li><a href="products.html">Unconventional Material</a></li>
+                        <li><a href="products.html">View All</a></li>
+                    </ul>
+                </li>
+                <li class="menuitem">Special Deals</li>
+                <li class="menuitem"><a href="\Cart\Index">Shopping Cart</a></li>
+                <li class="menuitem">Sign Up
+                    <ul class="signup">
+                        <li>Email: <input id="emailInput" type="text" size="18" /></li>
+                        <li>Username: <input id="usernameInput" type="text" size="18"/></li>
+                        <li>Password: <input id="passwordInput" type="password" size="18" /></li>
+                        <li><input id="signUpButton" class="button" type="button" value="Sign Up" /></li>
+                    </ul>  
+                </li>
+            </ul>
+          
+                @if (Model != null && Model.FeaturedProduct != null)
+                {
+                   Html.RenderPartial("_Product", Model.FeaturedProduct);
+                }
+             
+        </nav>
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+        <footer class="copyright">
+            <p>&copy; 2015 On a Different Note</p>
+            <p>Property of Stephanie Powers & Co.</p>
+            <p>Stephanie Powers & Co. not responsible for any loss of study time due to the amazingly cool content on our site.</p>
+        </footer>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/site")
+    @* Bundles mean that when debug is set to false, it will mimify the js; update this in 
+        bundleConfig in app start folder*@
+    @Scripts.Render("~/Scripts/site.js")
+    @Styles.Render("~/Content/styles.css")
+    @Scripts.Render("~/bundles/modernizr")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

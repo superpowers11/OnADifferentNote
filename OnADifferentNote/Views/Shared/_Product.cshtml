@@ -1,0 +1,34 @@
+﻿@model OnADifferentNote.Models.ProductViewModel
+@{
+    var slashthrough = "";
+    if (Model.ProductSalePrice != default(double))
+    {
+        slashthrough = "slash-through";
+    }
+}
+<div class="product">
+    <span id="productId" class="invisible">@Model.ProductId</span>
+@{
+    if (Model.isFeaturedProduct == true)
+    {
+        <div class="featured">
+            <h5>Featured Product</h5>
+           <h4>@Model.ProductName</h4>
+         </div>
+    }
+    else
+    {
+        <h4>@Model.ProductName</h4>
+    }
+}
+    <a href="details.html">
+        <img src="@Model.ProductImageUrl" alt="@Model.ProductName" width="110" height="110" border="0">
+    </a>
+    <p>
+        $<span class="@slashthrough regular-price">@Model.ProductPrice</span><br /><br />
+        <span class="sale-price"></span>
+    </p>
+    <p><a href="details.html">Details</a></p>
+    <a id="addToCart" class="button">Add to Cart</a>
+</div>
+
